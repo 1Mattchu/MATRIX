@@ -5,10 +5,15 @@ def main():
     if os.path.exists("dir_paths.json"):
         return print("dir_paths.json exists!")
 
-    input_dir_path = input("Enter the absolute path to input stl file directory: ")
+    #My edits
+    input_dir_path = os.getenv("STL_INPUT_DIR", "/app/stl_input")
+    output_file = os.getenv("GCODE_OUTPUT_DIR", "/app/gcode_output")
 
-    output_dir_path = input("Enter the absolute path to output stl file directory: ")
 
+    print(f"Using input directory: {input_dir_path}")
+    print(f"Using output file: {output_file}")
+    #My edits
+    
     if os.path.exists(input_dir_path) and os.path.exists(output_dir_path):
         dir_paths = {
             "input_dir_path": input_dir_path,
