@@ -11,7 +11,7 @@ def main():
 
 
     print(f"Using input directory: {input_dir_path}")
-    print(f"Using output file: {output_file}")
+    print(f"Using output directory: {output_dir_path}")
     #My edits
     
     if os.path.exists(input_dir_path) and os.path.exists(output_dir_path):
