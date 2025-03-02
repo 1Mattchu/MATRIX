@@ -6,6 +6,8 @@ import configuration
 import json
 
 app = Flask(__name__)
+app.run(debug=True, port=5000, host='0.0.0.0')
+
 
 input_dir_path = ""
 output_dir_path = ""
