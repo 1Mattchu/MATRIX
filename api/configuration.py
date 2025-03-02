@@ -7,7 +7,7 @@ def main():
 
     #My edits
     input_dir_path = os.getenv("STL_INPUT_DIR", "/app/stl_input")
-    output_file = os.getenv("GCODE_OUTPUT_DIR", "/app/gcode_output")
+    output_dir_path = os.getenv("GCODE_OUTPUT_DIR", "/app/gcode_output")
 
 
     print(f"Using input directory: {input_dir_path}")
