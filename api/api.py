@@ -89,7 +89,7 @@ def file(filename):
     
     result = subprocess.run(
         [
-            configuration.get_dir() + f"superslicer/superslicer",
+            configuration.get_dir() + f"/superslicer/superslicer",
             "-g",
             file_path
         ],
