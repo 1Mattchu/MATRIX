@@ -120,6 +120,8 @@ def fileAndOption(file, options):
         file_path
     ] + options_list
 
+    return sub
+
     print("Executing:", sub)
     
     result = subprocess.run(
