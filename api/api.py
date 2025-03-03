@@ -6,7 +6,7 @@ import configuration
 import json
 
 app = Flask(__name__)
-app.run(debug=True, port=5000, host='0.0.0.0')
+
 
 
 input_dir_path = ""
@@ -211,4 +211,4 @@ if __name__ == '__main__':
     input_dir_path = data["input_dir_path"]
     output_dir_path = data["output_dir_path"]
 
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
