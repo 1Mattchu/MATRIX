@@ -184,7 +184,7 @@ def materialPrint(material, file, options):
     options_list = options.split()  
     print(options_list)
     sub = [
-         + f"superslicer/superslicer", 
+        configuration.get_dir() + f"/superslicer/superslicer", 
         "-g",
         file_path,
         "--load",
